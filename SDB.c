@@ -30,13 +30,13 @@ bool SDB_AddEntry() {
     printf("Enter Course1_grade: ");
     scanf("%u", &newStudent.Course1_grade);
     printf("Enter Course2_ID: ");
-    scanf("%u", &newStudent.Course1_ID);
+    scanf("%u", &newStudent.Course2_ID);
     printf("Enter Course2_grade: ");
-    scanf("%u", &newStudent.Course1_grade);
+    scanf("%u", &newStudent.Course2_grade);
     printf("Enter Course3_ID: ");
-    scanf("%u", &newStudent.Course1_ID);
+    scanf("%u", &newStudent.Course3_ID);
     printf("Enter Course3_grade: ");
-    scanf("%u", &newStudent.Course1_grade);
+    scanf("%u", &newStudent.Course3_grade);
     // Similar input for other fields
 
 
@@ -76,7 +76,6 @@ bool SDB_ReadEntry(uint32 id) {
             printf("Course2 GARDE: %u\n", database[i].Course2_grade);
             printf("Course3 ID: %u\n", database[i].Course3_ID);
             printf("Course3 GARDE: %u\n", database[i].Course3_grade);
-            // Print other fields
             return true;
         }
     }

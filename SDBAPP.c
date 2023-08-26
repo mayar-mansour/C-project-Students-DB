@@ -1,6 +1,6 @@
 #include "SDB.h"
 #include <stdio.h>
-#define MAX_STUDENTS 10 // Define MAX_STUDENTS here
+#define MAX_STUDENTS 10 
 void SDB_action(uint8 choice) {
     switch (choice) {
         case 1: {

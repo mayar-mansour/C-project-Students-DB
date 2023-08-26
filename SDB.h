@@ -22,4 +22,4 @@ bool SDB_ReadEntry(uint32 id);
 void SDB_GetList(uint8 *count, uint32 *list);
 bool SDB_IsIdExist(uint32 id);
 
-#endif // SDB_H
+#endif 

@@ -37,10 +37,7 @@ bool SDB_AddEntry() {
     scanf("%u", &newStudent.Course3_ID);
     printf("Enter Course3_grade: ");
     scanf("%u", &newStudent.Course3_grade);
-    // Similar input for other fields
 
-
-    // Add newStudent to the database
     database[num_students] = newStudent;
     num_students++;
 
@@ -49,10 +46,8 @@ bool SDB_AddEntry() {
 }
 
 void SDB_DeleteEntry(uint32 id) {
-    // Search for student with matching ID and delete
     for (uint8 i = 0; i < num_students; i++) {
         if (database[i].Student_ID == id) {
-            // Shift remaining students to fill the gap
             for (uint8 j = i; j < num_students - 1; j++) {
                 database[j] = database[j + 1];
             }
@@ -65,7 +60,6 @@ void SDB_DeleteEntry(uint32 id) {
 }
 
 bool SDB_ReadEntry(uint32 id) {
-    // Search for student with matching ID and print details
     for (uint8 i = 0; i < num_students; i++) {
         if (database[i].Student_ID == id) {
             printf("Student ID: %u\n", database[i].Student_ID);
